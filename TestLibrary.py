@@ -27,11 +27,19 @@ class TestLibrary(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.library.borrow_book("invalid isbn")
             
-    def test_borrow_book_book_not_available(self):
+    def test_borrow_book_not_available(self):
         
         self.library.borrow_book("1234567890")
         with self.assertRaises(ValueError):
             self.library.borrow_book("1234567890")
+            
+    def test_return_book_success(self):
+        
+        self.library.borrow_book("1234567890")
+        self.library.return_book("1234567890")
+        book = self.library.books["1234567890"]
+        self.assertTrue(book.is_available)
+
 
 
 
