@@ -11,6 +11,12 @@ class TestLibrary(unittest.TestCase):
     def test_add_book_success(self):
         
         self.assertIn("1234567890", self.library.books)
+        
+    def test_add_book_duplicate_isbn(self):
+        
+        with self.assertRaises(ValueError):
+            self.library.add_book("1234567890", "Book 2", "Author 2", 2021)
+
 
 if __name__ == "__main__":
     unittest.main()
