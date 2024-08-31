@@ -16,6 +16,13 @@ class TestLibrary(unittest.TestCase):
         
         with self.assertRaises(ValueError):
             self.library.add_book("1234567890", "Book 2", "Author 2", 2021)
+            
+    def test_borrow_book_success(self):
+          
+        self.library.borrow_book("1234567890")
+        book = self.library.books["1234567890"]
+        self.assertFalse(book.is_available)
+
 
 
 if __name__ == "__main__":
