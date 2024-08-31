@@ -44,7 +44,12 @@ class TestLibrary(unittest.TestCase):
     def test_view_available_books(self):
         
         available_books = self.library.view_available_books()
-       
+        print("Available books:")
+        for book in available_books:
+            print(f"ISBN: {book.isbn}, Title: {book.title}, Author: {book.author}, Publication Year: {book.publication_year}")
+        self.assertEqual(len(available_books), 2)
+        self.assertEqual(available_books[0].isbn, "1234567890")
+        self.assertEqual(available_books[1].isbn, "2345678901")
 
 
 

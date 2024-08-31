@@ -38,3 +38,7 @@ class Library:
         book.is_available = True
         print("Return  book with ISBN {} successfully.".format(isbn))
 
+    def view_available_books(self):
+        """View a list of all available books."""
+        available_books = [book for book in self.books.values() if book.is_available]
+        return available_books
