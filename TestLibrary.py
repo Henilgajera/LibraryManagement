@@ -39,6 +39,12 @@ class TestLibrary(unittest.TestCase):
         self.library.return_book("1234567890")
         book = self.library.books["1234567890"]
         self.assertTrue(book.is_available)
+        
+    
+    def test_view_available_books(self):
+        
+        available_books = self.library.view_available_books()
+       
 
 
 
