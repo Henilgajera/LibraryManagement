@@ -22,6 +22,11 @@ class TestLibrary(unittest.TestCase):
         self.library.borrow_book("1234567890")
         book = self.library.books["1234567890"]
         self.assertFalse(book.is_available)
+        
+    def test_borrow_book_not_found(self):
+        with self.assertRaises(ValueError):
+            self.library.borrow_book("invalid isbn")
+
 
 
 
