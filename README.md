@@ -1,7 +1,7 @@
 # Kata : Library Management System
 
 ## Description
-The Library Management System is a simple application built to manage books in a library. It allows users to add new books, borrow available books, return borrowed books, and view a list of all available books. This project is developed in Java using TDD (Test-Driven Development) and follows SOLID principles to ensure maintainable and extensible code.
+The Library Management System is a simple application built to manage books in a library. It allows users to add new books, borrow available books, return borrowed books, and view a list of all available books. This project is developed in Python using TDD (Test-Driven Development) and follows SOLID principles to ensure maintainable and extensible code.
 
 ## Table of Contents
 
