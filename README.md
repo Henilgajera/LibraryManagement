@@ -56,7 +56,7 @@ The Library Management System provides the following key features:
   - Functionality: Allows users to add new books to the library.
   - Details:<br>
         - Each book has a unique identifier (ISBN), title, author, and publication year.<br>
-        - Books are stored in the library's repository and marked as available by default.
+        - Books are stored in the library  and marked as available by default.
 
 **2. Borrow Books**
 
@@ -103,16 +103,6 @@ The Library Management System provides the following key features:
 
    ```bash
    cd LibraryManagement
-
-3. Build the project using Maven:
-   ```bash
-   mvn clean install
-
-4. Run Test case:
-    To run the tests, use the following Maven command:
-   ```bash
-   mvn test
-   ```
 
 ## Test Summary
 
